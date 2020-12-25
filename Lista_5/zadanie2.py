@@ -10,6 +10,9 @@ y = [-0.5403,-0.0104,0.9423,1.7445,1.3073,-0.7718,-2.4986,-0.7903,2.7334]
 
 poly = lagrange(x, y)
 newx = np.linspace(0.8,3.2,1000)
-
+roots = np.poly1d(poly).roots
+polyder = np.polyder(poly)
 plt.plot(newx,poly(newx))
 plt.show()
+print(roots)
+print(polyder(2.1))

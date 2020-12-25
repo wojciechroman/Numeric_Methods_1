@@ -6,4 +6,4 @@ y = [1.225, 0.905, 0.652]
 
 poly = lagrange(x, y)
 
-print(Polynomial(poly).coef)
+print(poly)
